@@ -1,0 +1,16 @@
+.swiper__infobox {
+	display: flex;
+	margin-top: 14px;
+}
+
+@media (max-width: 768px) {
+	.swiper__infobox {
+			margin-top: 19px;
+	}
+}
+
+@media (max-width: 320px) {
+	.swiper__infobox {
+			margin-top: 11px;
+	}
+}

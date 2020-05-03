@@ -1,0 +1,15 @@
+@import url(./_left/swiper__gradient_left.css);
+@import url(./_right/swiper__gradient_right.css);
+
+.swiper__gradient {
+    position: absolute;
+    width: 88px;
+    height: 288px;
+    top: 0;
+}
+
+@media screen and (max-width: 1410px) {
+    .swiper__gradient {
+        display: none;
+    }
+}
