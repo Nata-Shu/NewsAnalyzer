@@ -1,1 +1,1 @@
-import "./../css/analysis.css";
+import "./css/analysis.css";

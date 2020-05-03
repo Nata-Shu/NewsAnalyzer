@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Сервис для анализа происходящих в мире событий. Его задача — установить, насколько популярны в мире новости на определённую тему."/>
     <meta name="author" content="Бойкова Наталья"/>
-    <title>NewsAnalyzer: Аналитика</title>
-		<link rel="stylesheet" href="./css/analysis.css">
-		<link rel="icon" href="./images/favicon.png" type="image/png">
+		<title>NewsAnalyzer: Аналитика</title>
+		<link rel="icon" href="<%=require('./images/favicon.png')%>" type="image/png">
+		<link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
 </head>
 <body>
     <div class="page">
@@ -86,12 +86,14 @@
                     </ul>
                 </nav>
                 <div class="footer__icons">
-                    <a class="footer__icon-item" href="https://github.com/Nata-Shu" target="_blank"><img alt="github icon" src="./images/icon/github.png"></a>
-                    <a class="footer__icon-item" href="https://www.facebook.com/" target="_blank"><img alt="facebook icon" src="./images/icon/facebook.png"></a>
+										<a class="footer__icon-item" href="https://github.com/Nata-Shu" target="_blank">
+											<img alt="github icon" src="<%=require('./images/icon/github.png')%>"></a>
+										<a class="footer__icon-item" href="https://www.facebook.com/" target="_blank">
+											<img alt="facebook icon" src="<%=require('./images/icon/facebook.png')%>"></a>
                 </div>
             </footer>
         </div>   
     </div>  
-    
+    <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
 </body>
 </html>

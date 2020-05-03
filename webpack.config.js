@@ -74,8 +74,8 @@ module.exports = {
 				}),
 				new HtmlWebpackPlugin({
 					inject: false,
-					template: './src/analytics.html',
-					filename: 'analytics.html'
+					template: './src/analysis.html',
+					filename: 'analysis.html'
 				}),
         new WebpackMd5Hash(),
 				new webpack.DefinePlugin({
