@@ -48,12 +48,12 @@ module.exports = {
             },
             {
                 test: /\.(eot|ttf|woff|woff2)$/,
-                loader: 'file-loader?name=./vendor/fonts/[name].[ext]'
+                loader: 'file-loader?name=.style/vendor/fonts/[name].[ext]'
             },     
         ]
     },
     plugins: [ 
-        new MiniCssExtractPlugin({filename: '[name].[contenthash].css'}),
+        new MiniCssExtractPlugin({filename: 'index.[contenthash].css'}),
         new OptimizeCssAssetsPlugin({
            assetNameRegExp: /\.css$/g,
             cssProcessor: require('cssnano'),
