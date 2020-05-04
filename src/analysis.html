@@ -8,7 +8,7 @@
     <meta name="author" content="Бойкова Наталья"/>
 		<title>NewsAnalyzer: Аналитика</title>
 		<link rel="icon" href="<%=require('./images/favicon.png')%>" type="image/png">
-		<link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
+		<link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.analysis.css %>">
 </head>
 <body>
     <div class="page">
@@ -94,6 +94,6 @@
             </footer>
         </div>   
     </div>  
-    <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+    <script src="<%= htmlWebpackPlugin.files.chunks.analysis.entry %>"></script>
 </body>
 </html>
