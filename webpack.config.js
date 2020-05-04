@@ -8,9 +8,9 @@ const isDev = process.env.NODE_ENV === 'development';
 
 module.exports = {
 	  entry: { 
-			main: './src/index.js', 
-			about:'./src/about.js',
-			analysis: './src/analysis.js'
+			main: './src/js/index.js', 
+			about:'./src/js/about.js',
+			analysis: './src/js/analysis.js'
 		},
     output: {
         path: path.resolve(__dirname, 'dist'),
