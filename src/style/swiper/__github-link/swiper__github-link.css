@@ -6,7 +6,7 @@
 @media (max-width: 550px) {
 	.swiper__github-link {
 			display: block;
-			font-family: Roboto;
+			font-family: Roboto, Arial, sans-serif;
 			font-style: normal;
 			font-weight: 600;
 			font-size: 18px;

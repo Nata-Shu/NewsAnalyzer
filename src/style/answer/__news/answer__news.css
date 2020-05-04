@@ -2,7 +2,7 @@
 @import url(./_in-title/answer__news_in-title.css);
 
 .answer__news {
-    font-family: Roboto;
+    font-family: Roboto, Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;

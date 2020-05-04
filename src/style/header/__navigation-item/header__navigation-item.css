@@ -4,7 +4,7 @@
 @import url(./_black/header__navigation-item_black.css);
 
 .header__navigation-item {
-    font-family: 'roboto';
+    font-family: 'roboto', Arial, sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;

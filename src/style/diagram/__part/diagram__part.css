@@ -1,7 +1,7 @@
 .diagram__part {
 	position: absolute; 
 	margin-top: 16px;
-	font-family: 'Roboto';
+	font-family: 'Roboto', Arial, sans-serif;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 12px;
