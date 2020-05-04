@@ -9,7 +9,9 @@
 	align-items: center;
 	justify-content: space-between;
 }
-
+.search__control:hover {
+  box-shadow: inset 0px 0px 4px 3px #b6bcbf;
+}
 @media (max-width: 768px) {
 	.search__control {
 			margin-top: 24px;
