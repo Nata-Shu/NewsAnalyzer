@@ -14,8 +14,9 @@ module.exports = {
 		},
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: '[name].[chunkhash].js'
-    },
+				filename: 'js/[name].[chunkhash].js',
+				publicPath: isDev ? '/' : '/NewsAnalyzer/',    
+		},
     module: {
         rules: [{ 
                 test: /\.js$/, 
@@ -53,7 +54,7 @@ module.exports = {
         ]
     },
     plugins: [ 
-        new MiniCssExtractPlugin({filename: 'index.[contenthash].css'}),
+        new MiniCssExtractPlugin({filename: 'css/[name].[contenthash].css'}),
         new OptimizeCssAssetsPlugin({
            assetNameRegExp: /\.css$/g,
             cssProcessor: require('cssnano'),
