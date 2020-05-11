@@ -1,9 +1,9 @@
 import { CommitCard } from "./CommitCard.js";
 
 export class CommitCardList {
-  constructor(box, commitData) {
+  constructor(box, commitsData) {
     this._box = box;
-    this.render(commitData);
+    this.render(commitsData);
   }
 
   addCard(commitDataItem) {
@@ -11,8 +11,8 @@ export class CommitCardList {
     this._box.appendChild(cardElement);
   }
 
-  render(commitData) {
-    commitData.forEach((elem) => {
+  render(commitsData) {
+    commitsData.forEach((elem) => {
       this.addCard(elem)
     })
   }
