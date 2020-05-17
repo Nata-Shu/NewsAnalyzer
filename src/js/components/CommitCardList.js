@@ -9,7 +9,8 @@ export class CommitCardList {
   addCard(commitDataItem) {
     const { cardElement } = new CommitCard(commitDataItem);
     this._box.appendChild(cardElement);
-  }
+	}
+	
 
   render(commitsData) {
     commitsData.forEach((elem) => {

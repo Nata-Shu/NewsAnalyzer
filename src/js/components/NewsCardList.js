@@ -12,7 +12,6 @@ export class NewsCardList {
   setData(cardsData) {
     this.cards = cardsData;
     this.clearList();
-
     this.row = 0;
     this.render(cardsData);
   }

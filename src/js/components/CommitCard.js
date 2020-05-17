@@ -1,6 +1,7 @@
 import {createNode} from "./NewsCard.js";
 import {makeFormattedDate} from "../utils/DateChange.js";
 
+
 export class CommitCard {
     constructor(commit_data_item) {
         this._date = commit_data_item.commit.committer.date;

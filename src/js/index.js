@@ -12,6 +12,7 @@ const error = document.querySelector(".error");
 const sectionResults = document.querySelector(".results");
 const resultList = new NewsCardList(document.querySelector(".results__list"));
 
+
 checkLocalStorage();
 submitButton.classList.add('search__button_active');
 function checkLocalStorage() {
@@ -28,12 +29,12 @@ function checkLocalStorage() {
 
 function activateFormButton(btnElement, state) {
   if (state) {
-    console.log('Активирую кнопку');
+    //console.log('Активация кнопки');
     btnElement.removeAttribute('disabled');
     btnElement.classList.add('search__button_active');
   }
   else {
-    console.log('Деактивирую кнопку');
+    //console.log('Деактивакция кнопки');
     btnElement.setAttribute('disabled', true);
     btnElement.classList.remove('search__button_active');
   }

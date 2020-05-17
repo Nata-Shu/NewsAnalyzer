@@ -18,3 +18,4 @@ getCommits.getApiData()
     console.log('Ошибка получения коммита с GitHub:' + error);
   }
   )
+	
