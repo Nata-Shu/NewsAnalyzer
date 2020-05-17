@@ -14,8 +14,9 @@ module.exports = {
 		},
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: '[name].[chunkhash].js'
-    },
+				filename: 'js/[name].[chunkhash].js',
+				publicPath: isDev ? '/' : '/NewsAnalyzer/',    
+		},
     module: {
         rules: [{ 
                 test: /\.js$/, 
@@ -48,12 +49,12 @@ module.exports = {
             },
             {
                 test: /\.(eot|ttf|woff|woff2)$/,
-                loader: 'file-loader?name=.style/vendor/fonts/[name].[ext]'
+                loader: 'file-loader?name=fonts/[name].[ext]'
             },     
         ]
     },
     plugins: [ 
-        new MiniCssExtractPlugin({filename: 'index.[contenthash].css'}),
+        new MiniCssExtractPlugin({filename: 'css/[name].[contenthash].css'}),
         new OptimizeCssAssetsPlugin({
            assetNameRegExp: /\.css$/g,
             cssProcessor: require('cssnano'),
